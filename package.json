@@ -1,6 +1,6 @@
 {
   "name": "typeorm-eloq-pagination",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Implementation of Eloquent's pagination model to TypeORM",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
