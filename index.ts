@@ -3,7 +3,7 @@ import { SelectQueryBuilder, Repository, getRepository } from 'typeorm';
 import LengthAwarePaginator from './src/classes/LengthAwarePaginator';
 
 export async function paginate<T>(
-  target:  Repository<T> | SelectQueryBuilder<T> | (new() => T), 
+  target:  Repository<T> | SelectQueryBuilder<T>, 
   page: number = 1, perPage: number = 10, path?: string
 ): Promise<LengthAwarePaginator<T>> {
   let sqb: SelectQueryBuilder<T>;
@@ -12,8 +12,6 @@ export async function paginate<T>(
     sqb = target.createQueryBuilder(); 
   } else if(target instanceof SelectQueryBuilder) {
     sqb = target;
-  } else if (target?.constructor?.name === 'Function') {
-    sqb = getRepository(target).createQueryBuilder();
   } else {
     throw new Error('Invalid target for pagination');
   }

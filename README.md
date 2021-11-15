@@ -10,7 +10,7 @@ npm install typeorm-eloq-pagination
 ```ts
 const currentPage = parseInt(req.query.page as string) || 1;
 
-const paginator = await paginate(Author, currentPage, 10, req.originalUrl);
+const paginator = await paginate(getRepository(Author), currentPage, 10, req.originalUrl);
 
 // Or
 
