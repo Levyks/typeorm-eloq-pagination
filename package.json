@@ -1,0 +1,26 @@
+{
+  "name": "typeorm-eloq-pagination",
+  "version": "0.1.0",
+  "description": "Implementation of Eloquent's pagination model to TypeORM",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc -p ."
+  },
+  "keywords": [
+    "typeorm",
+    "pagination",
+    "eloquent",
+    "database",
+    "orm"
+  ],
+  "author": "Levy Barbosa <marcio.levy20@gmail.com>",
+  "license": "GNU",
+  "dependencies": {
+    "typeorm": "^0.2.40"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  }
+}
