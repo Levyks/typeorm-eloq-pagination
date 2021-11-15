@@ -3,23 +3,12 @@
     "files": true
   },
   "compilerOptions": {
-    "declaration": true,
     "target": "ESNext",
-    "outDir": "dist",
-
-    "moduleResolution": "node",
     "module": "commonjs",
+    "declaration": true,
+    "outDir": "dist",
     "esModuleInterop": true,
-
-    "sourceMap": true,
-    "removeComments": true,
-
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
   },
-  "include": [
-    "./**/*"
-  ],
   "exclude": [
     "node_modules/*"
   ]
