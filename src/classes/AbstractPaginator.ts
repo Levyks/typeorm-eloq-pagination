@@ -22,6 +22,10 @@ export default class AbstractPaginator<T> {
     return this.items.forEach(callback);
   }
 
+  map(callback: (item: T, index: number, array: T[]) => T, thisArg?: any): this {
+    return Object.assign(this, {items: this.items.map(callback, thisArg)});
+  }
+
   onEachSide(value: number): this {
     this.onEachSideValue = value;
     return this;
