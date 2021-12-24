@@ -2,7 +2,9 @@
 Implementation of [Eloquent's](https://laravel.com/docs/8.x/eloquent) pagination model to TypeORM
 
 This is basically a CTRL+C CTRL+V of the PHP code
+
 I do not take credit for the logic of it
+
 The only thing I did was the "converting" of the code to TS/JS
 
 ## Installation
